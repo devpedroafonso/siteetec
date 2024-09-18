@@ -1,0 +1,458 @@
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+:root {
+    --preto: #000000;
+    --verde: #3d755f;
+    --laranja: #f5ac00;
+    --azul: #00cef5;
+    --verde2: #358ea0;
+    --vermelho: #f43006;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bebas',sans-serif;
+
+}
+
+
+
+
+
+
+header {
+    
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 26px;
+}
+
+#logo a img {
+    height: 55px;
+    width: 220px;
+    padding-top:8px;
+}
+
+
+
+
+
+
+
+
+
+
+#esporte nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+#esporte nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    transition: all 0,5s ease;
+    color: var(--preto)
+}
+
+#esporte nav a i {
+    font-size: 26px;
+}
+
+.textoesporte {
+
+    font-size: 10px;
+}
+
+#esporte nav a:hover {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    color: var(--verde2);
+}
+
+
+
+
+
+
+
+
+
+#redessociais nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#redessociais nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--preto);
+    transition: all 0,5s ease-out;
+}
+
+
+#redessociais nav a i {
+
+    font-size: 30px;
+}
+
+.textoredessociais {
+
+    font-size: 10px;
+}
+
+#redessociais nav a:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    color: var(--verde2);
+}
+
+
+
+
+
+
+
+
+#contato nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#contato nav a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--preto);
+    transition: all 0,5s ease;
+}
+
+#contato nav a i {
+
+    font-size: 28px;
+}
+
+.textocontato {
+    font-size: 9px;
+
+}
+
+#contato nav a:hover {
+
+    color: var(--verde2);
+}
+
+
+
+
+
+
+
+
+#entrar button {
+    color: rgb(255, 255, 255);
+    background-color:var(--verde2);
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0,5s ease;
+}
+
+#entrar button:hover {
+    background-color: white;
+    color: var(--verde2);
+}
+
+
+
+
+
+.main-principal {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 125vh;
+    border-bottom: #000000;
+
+}
+
+
+
+.main-principal-texto {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.main-principal-texto h2{
+   color: var(--verde2);
+   font-size: 90px;
+   text-shadow: -1px 1px 1px #000000;
+}
+
+.main-principal-texto p{
+    font-size: 20px;
+    max-width: 600px;
+}
+
+section.sobre{
+    
+    padding-top: 400px;
+    padding-left: 1000px;
+    position: relative;
+}
+
+.extra{
+    
+    position: absolute;
+    bottom: -350px;
+    right: -350px;
+    border-radius: 50%;
+    width: 1000px;
+    height: 1000px;
+    background-color: var(--verde2);
+}
+
+.extra img{
+    margin-top: -50px;
+    margin-left: -130px;
+    width: 700px;
+}
+
+
+.extra-button{
+   text-shadow: -1px -1px -1px black;
+}
+
+.extra-button button{
+    border:0;
+    border-radius: 10px;
+    background-color: var(--verde2);
+    color: white;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+    box-shadow: -3px 3px 3px black;
+    text-shadow: -2px 2px 5px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards {
+    overflow-x: hidden;
+    max-width: 219vh;
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.cards:hover {
+    background-color: var(--verde2);
+    width:100%;
+}
+
+.cards h2 {
+    text-shadow: 5px 5px 5px grey;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.grupo-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+
+}
+
+.card img {
+    width: 255PX;
+    height: 250px;
+} 
+
+.card {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 500px;
+    text-align: center;
+    transition: all 1s ease;
+    background-color: var(--laranja);
+    opacity: 0.3;
+
+}
+
+.card:hover {
+    opacity: 1;
+    transform: translatey(-20px);
+}
+
+.card h3 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+    height: 150px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-button button {
+    font-size: 14px;
+    border-radius: 20px;
+    border: 2px solid black;
+    height: 40px;
+    width: 150px;
+    transition: all 0, 5s ease;
+    cursor: pointer;
+    background-color: white;
+}
+
+.card-button button:hover {
+    background-color: black;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    height: 20vh;
+}
+
+
+.desenvolvedor {
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.desenvolvedor h4 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1053px) {}
