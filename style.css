@@ -27,12 +27,15 @@
 
 
 header {
-    
+    position: fixed;
+    width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+    z-index: 4;
 }
 
 
@@ -208,6 +211,7 @@ header {
     border-radius: 5px;
     font-size: 16px;
     transition: all 0,5s ease;
+    cursor: pointer;
 }
 
 #entrar button:hover {
@@ -219,7 +223,7 @@ header {
 
 
 
-.main-principal {
+#main-principal {
     overflow-y: hidden;
     overflow-x: hidden;
     display: flex;
@@ -314,6 +318,7 @@ section.sobre{
 
 
 .cards {
+    overflow-y: hidden;
     overflow-x: hidden;
     max-width: 219vh;
     border-top: 3px solid black;
@@ -322,6 +327,7 @@ section.sobre{
     justify-content: center;
     align-items: center;
     background-color: white;
+    border-bottom: 3px solid black;
 
 }
 
@@ -350,8 +356,8 @@ section.sobre{
 }
 
 .card img {
-    width: 255PX;
-    height: 250px;
+    width: 100%;
+    height: 100%px;
 } 
 
 .card {
@@ -407,9 +413,109 @@ section.sobre{
     color: white;
 }
 
+#tipos-esportes{
+    display: flex;
+    flex-direction: row;
+    max-width: 219vh;
+    gap: 30px;
+}
+
+.tipo-esportes-futebol, .tipo-esportes-natacao, .tipo-esportes-volei, .tipo-esportes-basquete, .tipo-esportes-atletismo{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+}
+
+
+.esporte-imagem img{
+    height: 500px;
+    width: 500px;
+}
+
+.esporte-imagem-natacao img{
+    position: relative;
+    margin-top: 255px;
+    height: 500px;
+    width: 500px;
+}
+
+.textos-esporte{
+    padding-left: 30px;
+    max-height:1000px ;
+}
+
+.textos-esporte h2{
+    margin-top: 20px;
+    font-size: 60px;
+    text-shadow:  -2px 2px 2px rgb(97,97,97);
+}
+
+.textos-esporte h3{
+    padding-top: 30px;
+    font-size: 30px;
+    text-shadow:  -2px 2px 2px rgb(97, 97, 97);
+    
+}
+
+.textos-esporte p{
+    font-size: 18px;
+}
+
+.textos-esporte ol{
+    margin-top: 2px;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.tipo-esportes-futebol button, .tipo-esportes-natacao button, .tipo-esportes-volei button, .tipo-esportes-basquete button, .tipo-esportes-atletismo button{
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 170px;
+    height: 30px;
+    font-size: 15px;
+    transition: 0,3 all ease;
+    cursor: pointer;
+}
+
+.tipo-esportes-futebol button:hover, .tipo-esportes-natacao button:hover, .tipo-esportes-volei button:hover, .tipo-esportes-basquete button:hover, .tipo-esportes-atletismo button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 800;
+}
 
 
 
+
+
+
+
+
+
+.tipo-esportes-futebol{
+    background-color: var(--verde);
+}
+
+.tipo-esportes-natacao{
+    background-color: var(--azul);
+}
+
+.tipo-esportes-volei{
+    background-color: var(--laranja);
+}
+
+.tipo-esportes-basquete{
+    background-color: var(--vermelho);
+}
+
+.tipo-esportes-atletismo{
+    background-color: var(--verde2);
+}
 
 
 
@@ -437,7 +543,28 @@ footer {
 
 
 
+.rollstart{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
 
+.rollstart:hover{
+    transform: translatey(-15px);
+}
+
+.rollstart i{
+    color: black;
+}
 
 
 
