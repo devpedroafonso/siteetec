@@ -320,7 +320,7 @@ section.sobre{
 .cards {
     overflow-y: hidden;
     overflow-x: hidden;
-    max-width: 219vh;
+    max-width: 100rem;
     border-top: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -517,10 +517,46 @@ section.sobre{
     background-color: var(--verde2);
 }
 
+thead{
+    background-color: #c5c5c5;
+    
+}
 
+.main-table{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
 
+.main-table table{
+    width: 90%;
+    border-collapse: collapse;
+}
 
+.main-table h2{
+    margin-bottom: 0.5rem;
+    text-shadow: #cecece -3px 3px 3px;
+}
 
+.main-table td,th{
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+.main-table tbody tr{
+    transition: all 0.3s ease;
+}
+
+.main-table tbody tr:hover{
+    background-color: #000000;
+    color: white;
+}
 
 footer {
     background-color: black;
